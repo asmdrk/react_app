@@ -5,11 +5,31 @@ class Counter extends Component {
 		count: 0,
 		tags: ["tag1", "tag2", "tag3"],
 	};
+
+	handleIncrement = () => {
+		{
+			this.setState({ count: this.state.count + 1 });
+		}
+	};
+	handleDecrement = () => {
+		this.setState({ count: this.state.count - 1 });
+	};
 	render() {
 		return (
 			<div>
 				<span className={this.getBadgeClass()}>{this.formatCount()}</span>{" "}
-				<button className="btn btn-secondary btn-sm">Increment</button>
+				<button
+					className="btn btn-secondary btn-sm"
+					onClick={this.handleIncrement}
+				>
+					Increment
+				</button>
+				<button
+					className="btn m-2 btn-secondary btn-sm"
+					onClick={this.handleDecrement}
+				>
+					Decrement
+				</button>
 				<ul>{this.formatTags()}</ul>
 			</div>
 		);
