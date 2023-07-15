@@ -32,4 +32,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Application
 Based on this [ tutorial ](https://youtu.be/Ke90Tje7VS0)
 
-It is a simple counter app
+It is a simple counter app, with some features from the tutorial and some additional ones like decrementing, adding new counters, custom labels for counters which I have added. 
